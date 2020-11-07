@@ -6,39 +6,13 @@ const
   studiesContainer = document.querySelector('.studies'),
   portfolioContainer = document.querySelector('.portfolio-container');
 
-// API URLs Dev
-const aboutUrl = 'http://localhost:8080/portfolio/api/bio?published=true';
-const skillsUrl = 'http://localhost:8080/portfolio/api/skills';
-const workUrl = 'http://localhost:8080/portfolio/api/jobs';
-const studiesUrl = 'http://localhost:8080/portfolio/api/courses';
-const portfolioUrl = 'http://localhost:8080/portfolio/api/projects';
-
-// API URLs Remote
-// const aboutUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/bio.php?published=true';
-// const skillsUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/skills.php';
-// const workUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/jobs.php';
-// const studiesUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/courses.php';
-// const portfolioUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/projects.php';
-
-
-/********** GET **********/
-/* Gets data and call create appropriate element
-  * @param        {string}        url       API-url
-*/
-const fetchAndCreate = (url, createElement) => {
-  fetch(url)
-    .then(res => res.json())
-    .then(data => createElement(data))
-    .catch(e => console.error(e))
-};
-
 
 
 /* Gets all bio with GET request
   * @param        {object}        fetchData       fetchData.bios[0].id/heading/bio/img_src
 */
 const createBio = (fetchData) => {
-  const bio = fetchData.bios[0];
+  const bio = fetchData.about;
 
   aboutContainer.innerHTML += `
     <div class="avatar-container">
@@ -66,7 +40,7 @@ const createSkills = (fetchData) => {
     skillsContainer.innerHTML += `
       <div class="skill">
         <i class="${skill.icon} fa-3x"></i>
-        <span>${skill.skill}</span>
+        <span>${skill.name}</span>
       </div>
     `
   })
@@ -98,7 +72,7 @@ const createWork = (fetchData) => {
   * @param        {object}        fetchData       fetchData.courses
 */
 const createStudies = (fetchData) => {
-  const courses = fetchData.courses;
+  const courses = fetchData.studies;
 
   courses.forEach(course => {
     studiesContainer.innerHTML += `
@@ -113,6 +87,7 @@ const createStudies = (fetchData) => {
 };
 
 
+const isIos = () => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 /* Gets all jobs with GET request
   * @param        {object}        fetchData       fetchData.projects
@@ -140,11 +115,11 @@ const createPortfolio = (fetchData) => {
 };
 
 
-
 window.addEventListener("load",
-  fetchAndCreate(aboutUrl, createBio),
-  fetchAndCreate(skillsUrl, createSkills),
-  fetchAndCreate(workUrl, createWork),
-  fetchAndCreate(studiesUrl, createStudies),
-  fetchAndCreate(portfolioUrl, createPortfolio)
+  // fetchAndCreate(aboutUrl, createBio),
+  createBio(portfolio),
+  createSkills(portfolio),
+  createWork(portfolio),
+  createStudies(portfolio),
+  createPortfolio(portfolio)
 );

@@ -30,6 +30,7 @@ const path = {
   scss: 'src/styles/**/*.scss',
   js: 'src/js/*.js',
   images: 'src/images/*',
+  json: 'src/data/*',
   dist: 'docs'
 }
 
@@ -75,12 +76,20 @@ const styles = async () => {
 // JS Task - ES6 to ES5 + uglify
 const js = async () => {
   await src(path.js)
+    .pipe(sourceMaps.init())
     .pipe(babel({
       presets: ['@babel/env']
     }))
     .pipe(concat('/js/main.js'))
+    .pipe(sourceMaps.write())
     .pipe(uglify())
     .pipe(dest(`${path.dist}`))
+}
+
+// JSON
+const JSON = () => {
+  return src(path.json)
+    .pipe(dest(`${path.dist}/data`))
 }
 
 // Images Task - Minify
@@ -102,6 +111,7 @@ const watcher = async () => {
   await watch(path.css).on('change', series(styles, browserSync.reload))
   await watch(path.scss).on('change', series(styles, browserSync.reload))
   await watch(path.js).on('change', series(js, browserSync.reload))
+  await watch(path.json).on('change', series(JSON, browserSync.reload))
   await watch(path.images).on('change', series(images, browserSync.reload))
 }
 
@@ -117,7 +127,7 @@ const server = async () => {
 
 exports.default = series(
   cleanDist,
-  parallel(html, styles, js, images, favicon),
+  parallel(html, styles, js, JSON, images, favicon),
   server,
   watcher
 );
