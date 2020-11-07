@@ -1,7 +1,7 @@
 const portfolio = {
   about: {
     heading: "Hi There, I'm Jonathan!",
-    bio: "I’m currently studying web development at Mid Sweden University, Sundsvall, but I’m based in Stockholm, Sweden.<br/><br/> I love both back- and front-end development, but see myself as more of a front-end guy. I love being able to use both logic and creativity when building projects, which is the reason I fell in love with development in the first place.<br/> I've summarized some of my skills, and projects below, so make sure to take a look. :) <br/><br/>If you're looking for a developer, don't hesitate to <a href='https://www.linkedin.com/in/jonathan-laasonen-974aa617a/' target='_blank'>get in touch</a>!",
+    bio: "I’m currently studying web development at Mid Sweden University, Sundsvall, but I’m based in Stockholm, Sweden.<br/><br/> I love both back- and front-end development, but see myself as more of a front-end guy. I love being able to use both logic and creativity when building projects, which is the reason I fell in love with development in the first place.<br/> I've summarized some of my skills and projects below, so make sure to take a look. :) <br/><br/>If you're looking for a developer, don't hesitate to <a href='https://www.linkedin.com/in/jonathan-laasonen-974aa617a/' target='_blank'>get in touch</a>!",
     img_src: "../images/me.jpg"
   },
   skills: [
@@ -207,37 +207,37 @@ const portfolio = {
   projects: [
     {
       title: "Paintings by Mela",
-      url: "https://www.paintingsbymela.se",
+      prj_url: "https://www.paintingsbymela.se",
       img_src: "./images/PBM.jpg",
       descr: "A webpage for my fiends art portfolio. Made using WordPress to make maintenance easy."
     },
     {
       title: "Keep the Lights On",
-      url: "http://studenter.miun.se/~jola1803/dt173g/moment2/",
+      prj_url: "http://studenter.miun.se/~jola1803/dt173g/moment2/",
       img_src: "./images/KTLO.jpg",
       descr: "Concept page I created during course Web Development III, with focus on using Gulp &amp; Sass."
     },
     {
       title: "DealBuddy",
-      url: "http://dealbuddy.ai/",
+      prj_url: "http://dealbuddy.ai/",
       img_src: "./images/DealBud.jpg",
       descr: "A site I helped to build for a business selling AI solutions for online retailers. I was mainly responsible for building the WordPress theme."
     },
     {
       title: "getAdit",
-      url: "http://studenter.miun.se/~jola1803/dt163g/moment4/",
+      prj_url: "http://studenter.miun.se/~jola1803/dt163g/moment4/",
       img_src: "./images/getAdit.jpg",
       descr: "Web store concept for a fictional sports goods retailer. Final project in course Digital Imaging for the Web, focusing on product images and image optimization."
     },
     {
       title: "Astro Studios",
-      url: "http://studenter.miun.se/~jola1803/writeable/wordpress/",
+      prj_url: "http://studenter.miun.se/~jola1803/writeable/wordpress/",
       img_src: "./images/Astro.jpg",
       descr: "Concept for a fictional music studio. Final project in course Web Design for CMS(WordPress), focusing on building WordPress themes."
     },
     {
       title: "recordBox",
-      url: "http://studenter.miun.se/~jola1803/gd008g/moment3/index.html",
+      prj_url: "http://studenter.miun.se/~jola1803/gd008g/moment3/index.html",
       img_src: "./images/recordBox.jpg",
       descr: "Project in course Typography and Layout for Internet Publishing"
     }
