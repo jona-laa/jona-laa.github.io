@@ -94,7 +94,7 @@ const portfolio = {
       title: "Assistant Manager",
       date_start: "2012-01-01",
       date_end: "2014-01-01",
-      descr: "Mentoring new employees, reports, delegating work, etc."
+      descr: "Mentoring, reports, delegating work, etc."
     }
   ],
   studies: [
