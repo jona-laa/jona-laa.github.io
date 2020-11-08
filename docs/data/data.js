@@ -80,21 +80,21 @@ const portfolio = {
       title: "Software Developer",
       date_start: "2019-09-01",
       date_end: "2020-04-30",
-      desc: "A high-paced intensive Full-Stack JavaScript Bootcamp, followed up by consultancy work"
+      descr: "A high-paced intensive Full-Stack JavaScript Bootcamp, followed up by consultancy work"
     },
     {
       company: "Teknikmagasinet",
       title: "Salesman",
       date_start: "2010-08-30",
       date_end: "2020-02-01",
-      desc: "Sales, Customer Service, orders"
+      descr: "Sales, Customer Service, orders"
     },
     {
       company: "Teknikmagasinet",
       title: "Assistant Manager",
       date_start: "2012-01-01",
       date_end: "2014-01-01",
-      desc: "Mentoring new employees, reports, delegating work, etc."
+      descr: "Mentoring new employees, reports, delegating work, etc."
     }
   ],
   studies: [
