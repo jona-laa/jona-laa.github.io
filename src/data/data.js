@@ -103,7 +103,7 @@ const portfolio = {
       institution: "Mid Sweden University",
       date_start: "2020-11-02",
       date_end: "",
-      descr: "Project management methods and roles"
+      descr: "Introduction to development in C#.NET"
     },
     {
       title: "Project Management",
@@ -124,7 +124,7 @@ const portfolio = {
       institution: "Mid Sweden University",
       date_start: "2019-03-25",
       date_end: "2019-06-09",
-      descr: "UI / UX"
+      descr: "Usability / UI / UX"
     },
     {
       title: "Web Design for CMS",
