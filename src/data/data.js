@@ -1,7 +1,7 @@
 const portfolio = {
   about: {
     heading: "Hi There, I'm Jonathan!",
-    bio: "I’m currently studying web development at Mid Sweden University, Sundsvall, but I’m based in Stockholm, Sweden.<br/><br/> I love both back- and front-end development, but see myself as more of a front-end guy. I love being able to use both logic and creativity when building projects, which is the reason I fell in love with development in the first place.<br/> I've summarized some of my skills and projects below, so make sure to take a look. :) <br/><br/>If you're looking for a developer, don't hesitate to <a href='https://www.linkedin.com/in/jonathan-laasonen-974aa617a/' target='_blank'>get in touch</a>!",
+    bio: "<p>I’m currently studying web development at Mid Sweden University, Sundsvall, but I’m based in Stockholm, Sweden.</p><p>I like both back- and front-end development, but see myself as more of a front-end guy. I love being able to use both logic and creativity when building projects, which is the reason I fell in love with development in the first place.<p/> <p> I've summarized some of my skills and projects below, so make sure to take a look. :) </p> <p> If you're looking for a developer, don't hesitate to <a href='https://www.linkedin.com/in/jonathan-laasonen-974aa617a/' target='_blank'>get in touch</a>!</p>",
     img_src: "../images/me.jpg"
   },
   skills: [
