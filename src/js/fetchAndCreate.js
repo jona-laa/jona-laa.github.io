@@ -39,7 +39,7 @@ const createSkills = (fetchData) => {
   skills.forEach(skill => {
     skillsContainer.innerHTML += `
       <div class="skill">
-        <i class="${skill.icon} fa-3x"></i>
+        <i class="${skill.icon} fa-3x" aria-hidden="true"></i>
         <span>${skill.name}</span>
       </div>
     `
