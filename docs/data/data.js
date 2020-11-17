@@ -10,6 +10,10 @@ const portfolio = {
       icon: "fab fa-js"
     },
     {
+      name: "TypeScript",
+      icon: "fas fa-code"
+    },
+    {
       name: "PHP",
       icon: "fab fa-php"
     },
@@ -70,7 +74,7 @@ const portfolio = {
       icon: "fas fa-mobile"
     },
     {
-      name: "TypeScript",
+      name: "C#.NET",
       icon: "fas fa-code"
     }
   ],
