@@ -244,6 +244,12 @@ const portfolio = {
       prj_url: "http://studenter.miun.se/~jola1803/gd008g/moment3/index.html",
       img_src: "./images/recordBox.jpg",
       descr: "Project in course Typography and Layout for Internet Publishing"
+    },
+    {
+      title: "My University Courses",
+      prj_url: "https://studenter.miun.se/~jola1803/dt173g/moment5/Client/",
+      img_src: "./images/courses.jpg",
+      descr: "An interface for adding, editing, and deleting contet. In this case consisting of my finished University Courses."
     }
   ]
 }
