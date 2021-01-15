@@ -248,8 +248,8 @@ const portfolio = {
     {
       title: "My University Courses",
       prj_url: "https://studenter.miun.se/~jola1803/dt173g/moment5/Client/",
-      img_src: "./images/courses.jpg",
-      descr: "An interface for adding, editing, and deleting contet. In this case consisting of my finished University Courses."
+      img_src: "./images/Courses.jpg",
+      descr: "An interface for adding, editing, and deleting content, in this case consisting of my finished University Courses."
     }
   ]
 }
