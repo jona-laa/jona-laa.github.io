@@ -250,6 +250,12 @@ const portfolio = {
       prj_url: "https://studenter.miun.se/~jola1803/dt173g/moment5/Client/",
       img_src: "./images/Courses.jpg",
       descr: "An interface for adding, editing, and deleting content, in this case consisting of my finished University Courses."
+    },
+    {
+      title: "Färdtjänsten",
+      prj_url: "https://studenter.miun.se/~jola1803/dt068g/fardtjansten/index.php",
+      img_src: "./images/Fardtjansten.jpg",
+      descr: "Project in course Web Usability. The task was to make a usable and accessible UI for the transportation service, where users can book travel and find relevant information."
     }
   ]
 }
