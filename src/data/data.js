@@ -103,6 +103,18 @@ const portfolio = {
   ],
   studies: [
     {
+      title: "Business Models",
+      institution: "Mid Sweden University",
+      date_start: "2021-01-18",
+      date_end: "",
+      descr: "Creating business models"
+    },{
+      title: "ASP.NET with C#",
+      institution: "Mid Sweden University",
+      date_start: "2021-01-18",
+      date_end: "",
+      descr: "Web-applications in ASP.NET"
+    },{
       title: "Programming in C#.NET",
       institution: "Mid Sweden University",
       date_start: "2020-11-02",

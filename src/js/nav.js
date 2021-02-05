@@ -19,7 +19,7 @@ const hideMenu = () => {
       elementToggle(header, 'top', '0');
       elementDisplay(mainMenu, 'none');
     } else {
-      elementToggle(header, 'top', '-80px');
+      elementToggle(header, 'top', '-120px');
       elementDisplay(mainMenu, 'none');
     }
   }
