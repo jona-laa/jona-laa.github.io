@@ -66,8 +66,8 @@ const portfolio = {
       icon: "fas fa-database"
     },
     {
-      name: "Terminal",
-      icon: "fas fa-terminal"
+      name: "ASP.NET",
+      icon: "fas fa-code"
     },
     {
       name: "React Native",
