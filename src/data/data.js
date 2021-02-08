@@ -19,7 +19,7 @@ const portfolio = {
     },
     {
       name: "Node.js",
-      icon: "fab fa-node"
+      icon: "fab fa-node-js"
     },
     {
       name: "React.js",
@@ -40,6 +40,10 @@ const portfolio = {
     {
       name: "Sass",
       icon: "fab fa-sass"
+    },
+    {
+      name: "Gulp",
+      icon: "fab fa-gulp"
     },
     {
       name: "MongoDB",
