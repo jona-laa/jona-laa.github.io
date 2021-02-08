@@ -234,12 +234,6 @@ const portfolio = {
       descr: "Concept page I created during course Web Development III, with focus on using Gulp &amp; Sass."
     },
     {
-      title: "DealBuddy",
-      prj_url: "http://dealbuddy.ai/",
-      img_src: "./images/DealBud.jpg",
-      descr: "A site I helped to build for a business selling AI solutions for online retailers. I was mainly responsible for building the WordPress theme."
-    },
-    {
       title: "getAdit",
       prj_url: "http://studenter.miun.se/~jola1803/dt163g/moment4/",
       img_src: "./images/getAdit.jpg",
