@@ -110,20 +110,20 @@ const portfolio = {
       title: "Business Models",
       institution: "Mid Sweden University",
       date_start: "2021-01-18",
-      date_end: "",
+      date_end: "2021-03-24",
       descr: "Creating business models"
     },{
       title: "ASP.NET with C#",
       institution: "Mid Sweden University",
       date_start: "2021-01-18",
-      date_end: "",
+      date_end: "2021-03-24",
       descr: "Web-applications in ASP.NET"
     },{
       title: "Programming in C#.NET",
       institution: "Mid Sweden University",
       date_start: "2020-11-02",
-      date_end: "",
-      descr: "Introduction to development in C#.NET"
+      date_end: "2021-01-18",
+      descr: "Introduction to programming in C#.NET"
     },
     {
       title: "Project Management",
@@ -144,7 +144,7 @@ const portfolio = {
       institution: "Mid Sweden University",
       date_start: "2019-03-25",
       date_end: "2019-06-09",
-      descr: "Usability / UI / UX"
+      descr: "Usability, UI / UX, and accessibility"
     },
     {
       title: "Web Design for CMS",
@@ -177,22 +177,22 @@ const portfolio = {
     {
       title: "Typography and Layout for Internet Publishing",
       institution: "Mid Sweden University",
-      date_start: "2019-01-21",
-      date_end: "2019-03-24",
+      date_start: "2018-11-05",
+      date_end: "2019-01-20",
       descr: "Best practices for using typography on the web, and designing of layouts"
     },
     {
       title: "Introduction to Programming in JavaScript",
       institution: "Mid Sweden University",
       date_start: "2018-09-01",
-      date_end: "2019-10-30",
+      date_end: "2018-10-30",
       descr: "JavaScript Basics"
     },
     {
       title: "Web Development I",
       institution: "Mid Sweden University",
       date_start: "2018-09-01",
-      date_end: "2019-10-30",
+      date_end: "2018-10-30",
       descr: "HTML5/CSS3"
     },
     {
@@ -200,7 +200,7 @@ const portfolio = {
       institution: "Stockholm University",
       date_start: "2008-02-20",
       date_end: "2008-05-01",
-      descr: "Basic computer graphics(vector graphics, sprites, etc), and audio"
+      descr: "Introduction to computer graphics(vector graphics, sprites, etc), and audio"
     },
     {
       title: "Object-Oriented Analysis and Design",
