@@ -29,9 +29,8 @@ const hideMenu = () => {
 
       // Menu
       elementDisplay(mainMenu, 'none');
-      mainMenu.setAttribute('aria-hidden', 'false');
 
-      if (window.innerWidth <= 812){
+      if (window.innerWidth <= 812) {
         // Toggle
         mainMenuToggle.setAttribute('aria-hidden', 'false');
       }
@@ -69,10 +68,10 @@ window.onload = () => {
 $('#main-menu-toggle').click(function () {
   if (mainMenu.getAttribute('aria-hidden') == 'false') {
     mainMenu.setAttribute('aria-hidden', 'true');
-    mainMenuToggle.setAttribute('aria-expanded', 'true');
+    mainMenuToggle.setAttribute('aria-expanded', 'false');
   } else {
     mainMenu.setAttribute('aria-hidden', 'false');
-    mainMenuToggle.setAttribute('aria-expanded', 'false');
+    mainMenuToggle.setAttribute('aria-expanded', 'true');
   }
 
   $('.main-menu ul').slideToggle(200, function () {
