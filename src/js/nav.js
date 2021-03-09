@@ -26,13 +26,11 @@ const hideMenu = () => {
       elementToggle(header, 'top', '0');
       header.setAttribute('aria-hidden', 'false');
       elementDisplay(mainMenu, 'none');
-      mainMenu.setAttribute('aria-hidden', 'false');
       mainMenuToggle.setAttribute('aria-hidden', 'false');
     } else {
       elementToggle(header, 'top', '-120px');
       header.setAttribute('aria-hidden', 'true');
       elementDisplay(mainMenu, 'none');
-      mainMenu.setAttribute('aria-hidden', 'true');
       mainMenuToggle.setAttribute('aria-hidden', 'true');
     }
   }
@@ -62,9 +60,11 @@ window.onload = () => {
   if (window.innerWidth <= 812) {
     mainMenuToggle.setAttribute('aria-hidden', 'false');
     mainMenuToggle.setAttribute('aria-expanded', 'false');
+    mainMenu.setAttribute('aria-hidden', 'true');
   } else {
     mainMenuToggle.setAttribute('aria-hidden', 'true');
     mainMenuToggle.setAttribute('aria-expanded', 'true');
+    mainMenu.setAttribute('aria-hidden', 'false');
   }
 }
 
