@@ -1,7 +1,5 @@
 // DOM element selectors
-const header = document.querySelector('.header-content');
 const toTopBtn = document.querySelector('#goTop');
-const mainMenu = document.querySelector('#menu-main-menu');
 
 
 
@@ -57,3 +55,39 @@ $('#menu-main-menu a, .btn-top, .arrow-link').on('click', function (e) {
     );
   }
 });
+
+
+
+// Show hidden project info on default on touch screens(since no hover/focus capabilities)
+var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+
+
+
+// Add hover and focus effects on projects
+document.querySelectorAll(".portfolio-item_link").forEach(link => {
+  link.addEventListener('mouseenter', () => {
+    link.firstChild.nextElementSibling.firstElementChild.style.display = 'block';
+  })
+
+  link.addEventListener('focusin', () => {
+    link.firstChild.nextElementSibling.firstElementChild.style.display = 'block';
+  })
+
+  if (!supportsTouch) {
+    link.addEventListener('mouseleave', () => {
+      link.firstChild.nextElementSibling.firstElementChild.style.display = 'none';
+    })
+
+    link.addEventListener('focusout', () => {
+      link.firstChild.nextElementSibling.firstElementChild.style.display = 'none';
+    })
+  }
+});
+
+
+
+if (supportsTouch) {
+  document.querySelectorAll(".portfolio-item_link").forEach(link => {
+    link.firstChild.nextElementSibling.firstElementChild.style.display = 'block';
+  })
+}

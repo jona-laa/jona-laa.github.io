@@ -35,6 +35,7 @@
 
       &:hover {
         border-bottom: $color-light 1px solid;
+        color: darken($color-light, 30%) !important;
       }
 
       &:visited {
@@ -63,4 +64,3 @@
     }
   }
 }
-

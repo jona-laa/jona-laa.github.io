@@ -1,3 +1,10 @@
+// Header DOM-elements
+const header = document.querySelector('.header-content');
+const mainMenu = document.querySelector('#menu-main-menu');
+const mainMenuToggle = document.querySelector('#main-menu-toggle');
+
+
+
 // Hide header & to top on scroll
 window.onscroll = () => {
   hideMenu();
@@ -33,4 +40,28 @@ const hideMenu = () => {
 $('#main-menu-toggle').click(function () {
   $('.main-menu ul').slideToggle(200, function () {
   });
+
+  if (mainMenu.getAttribute('aria-hidden') == 'false') {
+    mainMenu.setAttribute('aria-hidden', 'true');
+    mainMenuToggle.setAttribute('aria-expanded', 'false');
+  } else {
+    mainMenu.setAttribute('aria-hidden', 'false');
+    mainMenuToggle.setAttribute('aria-expanded', 'true');
+  }
 });
+
+
+
+// Correct WAI-ARIA on resize
+window.onresize = () => {
+  if (window.innerWidth <= 812) {
+    mainMenu.style.display = 'none';
+    mainMenu.setAttribute('aria-hidden', 'true');
+    mainMenuToggle.setAttribute('aria-hidden', 'false');
+    mainMenuToggle.setAttribute('aria-expanded', 'false');
+  } else {
+    mainMenu.setAttribute('aria-hidden', 'false');
+    mainMenuToggle.setAttribute('aria-hidden', 'true');
+    mainMenuToggle.setAttribute('aria-expanded', 'true');
+  }
+}

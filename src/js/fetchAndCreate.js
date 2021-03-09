@@ -97,14 +97,16 @@ const createPortfolio = (fetchData) => {
 
   projects.forEach(project => {
     portfolioContainer.innerHTML += `
-      <div class="portfolio-item" style="background: url(${project.img_src}) no-repeat center center/cover">
-        <div class="portfolio-item_overlay">
-          <div class="portfolio-item_content">
-            <h3><a href="${project.prj_url}" target="_blank">${project.title}</a></h3>
-            <p>${project.descr}</p>
+      <a href="${project.prj_url}" class="portfolio-item_link" target="_blank">
+        <div class="portfolio-item" style="background: url(${project.img_src}) no-repeat center center/cover">
+          <div class="portfolio-item_overlay">
+            <div class="portfolio-item_content">
+              <h3>${project.title}</h3>
+              <p>${project.descr}</p>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     `
   });
 
