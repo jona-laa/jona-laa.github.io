@@ -46,7 +46,7 @@
     li {
       @include maxWidth(812px) {
         display: block;
-        line-height: 3.8rem;
+        line-height: 5.8rem;
         z-index: 11111;
       }
     }
