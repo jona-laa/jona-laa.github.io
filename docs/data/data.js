@@ -79,6 +79,10 @@ const portfolio = {
     },
     {
       name: "C#.NET",
+      icon: "fab fa-microsoft"
+    },
+    {
+      name: "Svelte",
       icon: "fas fa-code"
     }
   ],
@@ -88,7 +92,7 @@ const portfolio = {
       title: "Software Developer",
       date_start: "2019-09-01",
       date_end: "2020-04-30",
-      descr: "A high-paced intensive Full-Stack JavaScript Bootcamp, followed up by consultancy work"
+      descr: "A high-paced, intensive Full-Stack JavaScript Bootcamp, followed up by consultancy work"
     },
     {
       company: "Teknikmagasinet",
@@ -107,18 +111,25 @@ const portfolio = {
   ],
   studies: [
     {
+      title: "Individual Assignment",
+      institution: "Mid Sweden University",
+      date_start: "2021-03-23",
+      date_end: "2021-06-06",
+      descr: "Individual assignment, 15 credits"
+    },
+    {
       title: "Business Models",
       institution: "Mid Sweden University",
       date_start: "2021-01-18",
       date_end: "2021-03-24",
       descr: "Creating business models"
-    },{
+    }, {
       title: "ASP.NET with C#",
       institution: "Mid Sweden University",
       date_start: "2021-01-18",
       date_end: "2021-03-24",
       descr: "Web-applications in ASP.NET"
-    },{
+    }, {
       title: "Programming in C#.NET",
       institution: "Mid Sweden University",
       date_start: "2020-11-02",
@@ -226,17 +237,23 @@ const portfolio = {
   ],
   projects: [
     {
+      title: "Flipside System",
+      prj_url: "https://www.flipsidesystem.com",
+      img_src: "./images/Flipside.jpg",
+      descr: "Redesign and rebuild of Flipside System's website."
+    },
+    {
       title: "Paintings by Mela",
       prj_url: "https://www.paintingsbymela.se",
       img_src: "./images/PBM.jpg",
       descr: "A webpage for my fiends art portfolio. Made using WordPress to make maintenance easy."
     },
-    {
-      title: "Keep the Lights On",
-      prj_url: "http://studenter.miun.se/~jola1803/dt173g/moment2/",
-      img_src: "./images/KTLO.jpg",
-      descr: "Concept page I created during course Web Development III, with focus on using Gulp &amp; Sass."
-    },
+    // {
+    //   title: "Keep the Lights On",
+    //   prj_url: "http://studenter.miun.se/~jola1803/dt173g/moment2/",
+    //   img_src: "./images/KTLO.jpg",
+    //   descr: "Concept page I created during course Web Development III, with focus on using Gulp &amp; Sass."
+    // },
     {
       title: "getAdit",
       prj_url: "http://studenter.miun.se/~jola1803/dt163g/moment4/",
