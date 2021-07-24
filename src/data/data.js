@@ -88,6 +88,13 @@ const portfolio = {
   ],
   jobs: [
     {
+      company: "STACCS",
+      title: "Software Developer",
+      date_start: "2021-07-26",
+      date_end: "present",
+      descr: "A streaming platform for live concerts. Developing the mobile app in React Native, Node.js and webapplication in Svelte."
+    },
+    {
       company: "&lt;&frasl;SALT&gt;",
       title: "Software Developer",
       date_start: "2019-09-01",
@@ -248,12 +255,12 @@ const portfolio = {
       img_src: "./images/PBM.jpg",
       descr: "A webpage for my fiends art portfolio. Made using WordPress to make maintenance easy."
     },
-    // {
-    //   title: "Keep the Lights On",
-    //   prj_url: "http://studenter.miun.se/~jola1803/dt173g/moment2/",
-    //   img_src: "./images/KTLO.jpg",
-    //   descr: "Concept page I created during course Web Development III, with focus on using Gulp &amp; Sass."
-    // },
+    {
+      title: "Keep the Lights On",
+      prj_url: "http://studenter.miun.se/~jola1803/dt173g/moment2/",
+      img_src: "./images/KTLO.jpg",
+      descr: "Concept page I created during course Web Development III, with focus on using Gulp &amp; Sass."
+    },
     {
       title: "getAdit",
       prj_url: "http://studenter.miun.se/~jola1803/dt163g/moment4/",
