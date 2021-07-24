@@ -1,7 +1,7 @@
 const portfolio = {
   about: {
     heading: "Hi There, I'm Jonathan!",
-    bio: "<p>I’m currently studying web development at Mid Sweden University, Sundsvall, but I’m based in Stockholm, Sweden.</p><p>I like both back- and front-end development, but see myself as more of a front-end guy. I love being able to use both logic and creativity when building projects, which is the reason I fell in love with development in the first place.<p/> <p> I've summarized some of my skills and projects below, so make sure to take a look. :) </p> <p> If you're looking for a developer, don't hesitate to <a href='https://www.linkedin.com/in/jonathan-laasonen-974aa617a/' target='_blank'>get in touch</a>!</p>",
+    bio: "<p>I’ve spent a couple years studying web development at Mid Sweden University, and also finished a high-paced full-stack JavaScript bootcamp at &lt;&frasl;SALT&gt;, Stockholm. I'm currently working as a full-stack dev at Staccs, in Stockholm, Sweden. </p><p>I like both back- and front-end development, but see myself as more of a front-end guy. I love being able to use both logic and creativity when building projects, which is the reason I fell in love with development in the first place.<p/> <p> I've summarized some of my skills and projects below, so make sure to take a look. :) </p> <p> If you're looking for a developer, don't hesitate to <a href='https://www.linkedin.com/in/jonathan-laasonen-974aa617a/' target='_blank'>get in touch</a>!</p>",
     img_src: "../images/me.jpg"
   },
   skills: [
@@ -87,6 +87,13 @@ const portfolio = {
     }
   ],
   jobs: [
+    {
+      company: "STACCS",
+      title: "Software Developer",
+      date_start: "2021-07-26",
+      date_end: "present",
+      descr: "A streaming platform for live concerts. Developing the mobile app in React Native, Node.js and webapplication in Svelte."
+    },
     {
       company: "&lt;&frasl;SALT&gt;",
       title: "Software Developer",
@@ -248,12 +255,12 @@ const portfolio = {
       img_src: "./images/PBM.jpg",
       descr: "A webpage for my fiends art portfolio. Made using WordPress to make maintenance easy."
     },
-    // {
-    //   title: "Keep the Lights On",
-    //   prj_url: "http://studenter.miun.se/~jola1803/dt173g/moment2/",
-    //   img_src: "./images/KTLO.jpg",
-    //   descr: "Concept page I created during course Web Development III, with focus on using Gulp &amp; Sass."
-    // },
+    {
+      title: "Keep the Lights On",
+      prj_url: "http://studenter.miun.se/~jola1803/dt173g/moment2/",
+      img_src: "./images/KTLO.jpg",
+      descr: "Concept page I created during course Web Development III, with focus on using Gulp &amp; Sass."
+    },
     {
       title: "getAdit",
       prj_url: "http://studenter.miun.se/~jola1803/dt163g/moment4/",
